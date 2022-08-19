@@ -129,7 +129,6 @@ Thumbs.db
 .idea/
 
 # Project ignored files
-data/
 graph/
 checkpoints/
 summaries/
