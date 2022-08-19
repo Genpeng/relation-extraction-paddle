@@ -34,7 +34,8 @@ LHan = [
     [0x2F800, 0x2FA1D],     # Han # Lo [542] CJK COMPATIBILITY IDEOGRAPH-2F800, CJK COMPATIBILITY IDEOGRAPH-2FA1D
 ]
 
-
+# all Chinese punctuations can be obtained from:
+# https://unicode-table.com/en/blocks/cjk-symbols-and-punctuation/
 CN_PUNCTS = [
     (0x3002, "。"),
     (0xFF1F, "？"),
@@ -106,6 +107,7 @@ class ChineseAndPunctuationExtractor(object):
                     L.append(chr(i))
                 except:
                     pass
+
         for j, _ in CN_PUNCTS:
             try:
                 L.append(chr(j))
